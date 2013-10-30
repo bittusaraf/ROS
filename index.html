@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, minimum-scale=1, maximum-scale=1">
+            <title>
+            </title>
+            <link rel="stylesheet" href="css/jquery.mobile-1.3.0-rc.1.min.css" />
+            <link rel="stylesheet" type="text/css" href="css/tolito-1.0.2.css" />
+            <link rel="stylesheet" type="text/css" href="css/slides.css">
+                <link rel="stylesheet" type="text/css" href="css/application.css">
+                    
+                    
+                    <script src="js/iscroll.js"></script>
+                    <script type="text/javascript" src="js/libs/jquery.js"></script>
+                    <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
+                    <script type="text/javascript" src="js/libs/jquery-ui-touch-punch.js"></script>
+                    <script type="text/javascript" src="js/libs/jquery.mobile-1.3.0.min.js"></script>
+                    <script type="text/javascript" src="js/libs/klass.min.js"></script>
+                    <script type="text/javascript" src="js/libs/json2.js"></script>
+                    <script type="text/javascript" src="javascript/function.js"></script>
+                    <script type="text/javascript" src="js/core.js"></script>
+                    <script type="text/javascript" src="js/swipe.js"></script>
+                    <script type="text/javascript" src="javascript/main.js"></script>
+                    <script type="text/javascript" src="cordova.ios.js"></script>
+                    <script type="text/javascript" src="js/jqueryLongClick.js"></script>
+                    <script type="text/javascript" src="js/tolito-1.0.2.js"></script>
+                    <script src="js/jquery.mobile.iscrollview.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        var swipSlide;
+                        
+                        function onBodyLoad()
+                        {
+                            
+//                            document.addEventListener("deviceready", onDeviceReady, false);
+                            
+                            getToknenid();
+                            
+                            //remove class
+
+                        }
+                        
+                        </script>
+                    
+                    </head>
+	<body onload="onBodyLoad()">
+        
+        
+        <div data-role="page" class="page-color" id="id_login_page">
+            
+            <div data-role="header" class="header-color" id="register" data-position="fixed">
+                <img src="img/logo.png" class="ui-btn-left" style=" height:35px;width:100px"class="ui-btn-right" /><h1>ROS</h1>
+                
+            </div>
+            <div id="homePage_content_id" data-role="content" >
+                
+                <label for="basic">User Name:</label>
+                <input       type="text" name="name" id="txtLoginUserName" data-mini="true" />
+                <label for="basic">Password:</label>
+                <input      type="text" name="name" id="txtLoginAPssword" data-mini="true" />
+                <label for="basic">Enter Pin:</label>
+                <input   type="text" name="name" id="txtLoginPin" data-mini="true" />
+                
+                <div>
+                    <a id="id_signup" class="btn-color"data-role="button" data-inline="true">Sign up</a>
+                    <a id="id_login"  class="btn-color" data-role="button" data-inline="true">Login</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div data-role="page" class="page-color"  id="id_register_page">
+            
+            <div data-role="header" class="header-color" id="register" data-position="fixed">
+                <img src="img/logo.png" class="ui-btn-left" style=" height:35px;width:100px"class="ui-btn-right" /><h1>ROS</h1>
+            
+            </div>
+            <div id="homePage_content_id" data-role="content" >
+                
+                <label for="basic">User Name:</label>
+                <input       type="text" name="name" id="txtUsername" data-mini="true" />
+                <label for="basic">Email Address:</label>
+                <input      type="text" name="name" id="txtEmail" data-mini="true" />
+                <label for="basic">Confirm Email Address:</label>
+                <input      type="text" name="name" id="txtConEmail" data-mini="true" />
+                <label for="basic">Password:</label>
+                <input      type="text" name="name" id="txtPassword" data-mini="true" />
+                <label for="basic">confirm Password:</label>
+                <input      type="text" name="name" id="txtConpassword" data-mini="true" />
+                <label for="basic">Enter Pin:</label>
+                <input      type="text" name="name" id="basic" data-mini="true" />
+                <div>
+                    <a id="id_register" class="btn-color" data-role="button" data-inline="true">Submit</a>
+                </div>
+            </div>
+        </div>
+        
+        <div data-role="page" class="page-color" id="id_PinEnter" class="page-color" id="homePage_div_id">
+            
+            <div data-role="header" class="header-color"  id="register" data-position="fixed">
+                <h1>ROS</h1>
+            </div>
+            <div id="homePage_content_id" data-role="content" >
+                
+                <label for="basic">User Pin</label>
+                <input id="txtPin"  type="text" name="name"  data-mini="true" />
+                
+                <div>
+                    <a id="id_PinCheck"
+                        class="btn-color" data-role="button" data-inline="true">Enter</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" class=".ui-body-b"  data-quicklinks="true" id="id_menuPage">
+            <div data-role="header" class="header-color" data-position="fixed">
+                <h1>ROS Menu</h1>
+                <img src="img/logo.png" class="ui-btn-right" style=" height:35px;width:100px"class="ui-btn-right" />
+                <a href="#popupPanel"  data-icon="bars" data-iconpos="notext"></a>
+            </div><!-- /header -->
+            <div data-role="content" class="page-color">
+                
+                <h3>Name</h2>
+                    <p>Customer2</>
+                    <h3>Date of Birth</h2>
+                        <p>Wednesday, 23 October 2013</>
+                        <h3>Relationship</h2>
+                            <p>Myself</>
+                            <H3>Address:</h3>
+                            
+                            <p>
+                            Street address:
+                            fsd
+                            </p>
+                            <p>
+                            Region/City:
+                            Tauranga
+                            </p>
+                            
+                            </div>
+            
+            <div data-role="panel" id="popupPanel" style="background: rgba(0,0,0,.7);" data-position="left" data-display="overlay" data-theme="a">
+                
+                <div data-rele="content" position="fixed">
+                    
+                    <button data-theme="a"   data-mini="true" id="my_family">My family</button>
+                    <button data-theme="a"  data-mini="true" id="menu_repeat_order">Order medicine repeats</button>
+                    <button data-theme="a"   data-mini="true">Request a repeat prescription</button>
+                    <button data-theme="a"   data-mini="true">Pharmacy activity log</button>
+                    <button data-theme="a"   data-mini="true">Medical centre activity log</button>
+                    <button data-theme="a"   data-mini="true">My notifications</button>
+                    <button data-theme="a"   data-mini="true">Search pharmacy</button>
+                    <button data-theme="a"   data-mini="true">Search medical center</button>
+                    <button data-theme="a"   data-mini="true">Set reminder</button>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        <!-- family infoamtion page-->
+        <div data-role="page" class="page-color" id="id_family_page" id="homePage_div_id">
+            
+            <div data-role="header" class="header-color"id="register" style="font-size: 7.5px;" data-position="fixed">
+                
+                <a href="#id_menuPage" class="jqm-navmenu-link" data-icon="back" data-iconpos="notext" data-mini="false">Navigation</a>
+                <h1>My Family</h1>
+                <img src="img/logo.png" class="ui-btn-right" style=" height:35px;width:100px"class="ui-btn-right" />
+                
+            </div>
+            <div id="id_content_Family" data-role="content" >
+                <p>
+                <a style="color: #fef4e9;
+                    border: solid 1px #da7c0c;
+                    background: #f78d1d;
+                    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+                    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+                    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');"  data-role="button">Add family member</a>
+                </p>
+                
+                
+                <div data-role="collapsible-set"
+                id="id_familyInfo" data-theme="c" data-content-theme="d">
+                  
+                </div>
+                
+                
+            </div>
+        </div>
+        </div>
+        <!-- show inforamtion of repeat medicne order-->
+        <div data-role="page" class="page-color" id="id_repeat_medi_order">
+            
+            <div data-role="header" class="header-color" id="register" data-position="fixed">
+                <img src="img/logo.png" class="ui-btn-left" style=" height:35px;width:100px"class="ui-btn-right" /><h1>Create Repeat order</h1>
+                
+            </div>
+            <div id="repeatOrder_content_id" data-role="content" >
+                <div data-role="fieldcontain">
+                    
+                    <label for="select-place_order">Place order for *</label>
+                    <select name="place_order_list" id="select-place_order">
+                        <option value="-1">Select-a-value</option>
+                    </select>
+                </div>
+             
+                <fieldset data-role="controlgroup" data-mini="true" id="radio_order_repeat">
+                    <legend>ordering repeats because *</legend>
+                    
+                    
+                </fieldset>
+                
+                
+                
+            </div>
+        </div>
+    </body>
+</html>
